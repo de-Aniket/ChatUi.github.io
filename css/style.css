@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.chats {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+}
+.chats .left-chat {
+  width: 30%;
+  color: aqua;
+  background-color: rgb(231, 255, 231);
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+.chats .right-chat01 {
+  width: 75%;
+  height: auto;
+  color: #000;
+  background-color: #e4e2de;
+  padding: 1.5rem;
+}
+.chats .right-chat01 h1{
+  text-align: center;
+  color: red;
+  margin-top: 20rem;
+
+}
+.chats .right-chat {
+  display: none;
+  width: 75%;
+  height: auto;
+  color: #000;
+  background-color: #e4e2de;
+  font-size: 1.3rem;
+  padding: 1.5rem;
+  position: relative;
+}
+
+
+/* ------------------------------left-side-chat--------------------------------- */
+.head {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+.head img {
+  width: 5rem;
+  height: 5rem;
+}
+.chat-scroll{
+    height: 80vh;
+    overflow: auto;
+}
+.chat01 {
+  color: black;
+  border: 0.3rem solid #fff;
+  /* border-radius: 2rem; */
+  margin-bottom: 0.3rem;
+  text-indent: 1rem;
+  padding: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.chat01 img {
+  width: 4rem;
+  height: 4rem;
+}
+.chat01 p {
+  color: grey;
+}
+
+/* ------------------right chat --------------------  */
+.head .grp1 {
+  margin-left: 1.2rem;
+  font-size: 1.5rem;
+}
+.msg {
+  margin-left: auto;
+}
+.msg button{
+    margin: 0.2rem;
+    font-size: 1rem;
+}
+.msg span {
+  padding: 1rem;
+}
+
+.input-text {
+  display: flex;
+  position: absolute;
+   bottom: 0.5rem;
+   width: 93%;
+}
+
+.input-text button {
+  padding: 0.5rem 2rem;
+  margin: 0.2rem;
+  outline: none;
+  border: none;
+  
+}
+
+.inner-chat{
+    height: 80vh;
+    overflow: auto;
+    margin-top: 1.5rem;
+}
+.inner-chat p{
+    display: flex;
+    flex-direction: column;
+    border: 0.2rem solid green;
+    background-color: green;
+    color: #fff;
+    border-radius: 1rem;
+    width: 40%;
+    text-indent: 0.5rem;
+    padding:  0.2rem 0.3rem;
+}
+
+.userChat{
+    display: flex;
+    flex-direction: column;
+    border: 0.2rem solid green;
+    background-color: green !important;
+    color: #fff;
+    border-radius: 1rem;
+    width: 40%;
+    margin-left: auto !important;
+   
+}
+
+/* .inner-chat p:nth-child(odd){
+    display: inline-block;
+    justify-content: end;
+} */
